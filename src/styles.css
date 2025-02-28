@@ -1,0 +1,200 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+:root {
+
+    /* WHOLE PAGE */
+    --bg-color: rgba(230,224,184,1);
+    --text-color: rgba(3,22,30,1);
+    --link-color: rgba(236,29,91,1);
+    --alink-color: rgba(228,106,99,1);
+    --vlink-color: rgba(236,29,91,1);
+    --hlink-color: rgba(72,180,145,1);
+
+    /* NAV & FOOTER */
+    --nav-bg-color: rgba(3,22,30,0.9);
+    --nav-text-color: rgba(230,224,184,1);
+    --nav-link-color: rgba(236,29,91,1);
+    --nav-alink-color: rgba(228,106,99,1);
+    --nav-hlink-color: rgba(91,196,163,1);
+    --nav-vlink-color: rgba(236,29,91,1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+    html {
+    /* border: 2px solid red; */
+    }
+
+    body {
+       /* border: 2px solid orange; */
+       text-align: center;
+       background-color: var(--bg-color);
+       color: var(--text-color);
+    }
+
+    p {
+        margin: 0 auto;
+        padding: 0.4rem;
+        /* border: 2px solid teal; */
+    }
+
+    ul {
+        /* border: 2px solid red; */
+        margin: 0.2rem 0.4rem;
+        padding: 0.2rem 0.4rem;
+        list-style-position: inside;
+    }
+
+    li {
+        /* border: 2px solid orange; */
+        margin: 0 auto;
+        padding: 0.2rem;
+    }
+
+    a {
+        margin: 0 auto;
+        padding: 0;
+        color: var(--link-color);
+        /* border: 2px solid red; */
+    }
+
+        a:active {
+        color: var(--alink-color);
+        }
+
+        a:visited {
+        color: var(--vlink-color);
+        }
+
+        a:hover {
+        color: var(--hlink-color);
+        }
+
+header, main, footer {
+        margin: 0 auto;
+        padding: 0;
+        }
+
+header {
+    /* border: 2px solid green; */
+}
+
+nav, #hero {
+    margin: 0 auto;
+    padding: 0.6rem;
+}
+    
+     nav {
+        background-color: var(--nav-bg-color);
+     }
+        
+         nav a {
+           /* border: 2px solid white; */
+            color: var(--nav-link-color);
+            margin: 0.2rem 0.4rem;
+            padding: 0.2rem;
+            text-decoration: none;
+         }
+
+         nav a:active {
+            color: var(--nav-alink-color);
+         }
+
+         nav a:visited {
+            color: var(--nav-vlink-color);
+         }
+
+         nav a:hover {
+            border-top: 2px solid var(--nav-hlink-color);
+            border-bottom: 2px solid var(--nav-hlink-color);
+            color: var(--nav-hlink-color);
+         }
+
+     #hero {
+        /* border: 2px solid magenta; */
+     }
+
+     #hero h1 {
+        /* border: 2px solid orchid; */
+        margin: 3rem auto 0;
+        padding: 0;
+        font-size: 2rem;
+        line-height: 1.4;
+     }
+
+     #hero p {
+        /* border: 2px solid greenyellow; */
+        margin: 0 auto 1rem;
+        font-style: italic;
+        font-size: 1.2rem;
+        line-height: 1.1;
+     }
+
+
+main {
+    /* border: 2px solid blue; */ 
+    text-align: start;
+} 
+
+#about, #projects {
+    margin: 1rem 1rem 3rem;
+    padding: 0.2rem;
+    border: 1px solid var(--bg-color);
+    border-radius: 0.4rem;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+
+        #about {
+    /* border: 2px solid green; */
+        }
+
+        #projects {
+    /* border: 2px solid coral; */
+        }
+
+
+#about a, #projects a {
+    color: var(--nav-link-color);
+}
+#about a:active, #projects a:active {
+    color: var(--nav-alink-color);
+}
+#about a:visited, #projects a:visited {
+    color: var(--nav-vlink-color);
+}
+#about a:hover, #projects a:hover {
+color: var(--nav-hlink-color);
+}
+
+
+
+footer {
+    /* border: 2px solid purple; */
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+
+footer a {
+    color: var(--nav-link-color);
+}
+
+footer a:active {
+    color: var(--nav-alink-color);
+}
+
+footer a:visited {
+    color: var(--nav-vlink-color);
+}
+
+footer a:hover {
+    color: var(--nav-hlink-color);
+}
+
