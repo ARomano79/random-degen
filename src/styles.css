@@ -9,7 +9,7 @@
     /* WHOLE PAGE */
     --bg-color: rgba(234,234,234,1);
     --text-color: rgba(22,22,22,1);
-    --link-color: rgba(67,110,238,1);
+    --link-color: rgba(0,142,204,1);
     --alink-color: rgba(187,38,73,1);
     --vlink-color: rgba(85,26,139,1);
     --hlink-color: rgba(187,38,73,1);
@@ -17,12 +17,29 @@
     /* NAV & FOOTER */
     --nav-bg-color: rgba(234,234,234,1);
     --nav-text-color: rgba(22,22,22,1);
-    --nav-link-color: rgba(67,110,238,1);
+    --nav-link-color: rgba(0,142,204,1);
     --nav-alink-color: rgba(187,38,73,1);
-    --nav-vlink-color: rgba(85,26,139,1);
+    --nav-vlink-color: rgba(99,3,204,1);
     --nav-hlink-color: rgba(187,38,73,1);
      
+    --color1: rgb(99,3,204);
+    --color2: rgb(1,153,247);
 }
+
+/* GOOGLE FONT INFO */
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .shadows-into-light-two-regular {
+    font-family: "Shadows Into Light Two", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 
 html, body {
     margin: 0;
@@ -38,12 +55,15 @@ html, body {
        text-align: center;
        background-color: var(--bg-color);
        color: var(--text-color);
+       font-family: "Shadows Into Light Two", serif;
     }
 
     p {
         margin: 0 auto;
         padding: 0.4rem;
         /* border: 2px solid teal; */
+        font-size: 1.6rem;
+        line-height: 1.4;
     }
 
     ul {
@@ -51,12 +71,25 @@ html, body {
         margin: 0.2rem 0.4rem;
         padding: 0.2rem 0.4rem;
         list-style-position: inside;
+     
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        line-height: 1.1;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        line-height: 1.1;
     }
 
     li {
         /* border: 2px solid orange; */
         margin: 0 auto;
         padding: 0.2rem;
+        line-height: 1.2;
+        font-size: 1.2rem;
     }
 
     a {
@@ -76,6 +109,13 @@ html, body {
 
         a:hover {
         color: var(--hlink-color);
+        }
+
+        a:hover img {
+            background: rgba(187,38,73,1);
+            filter: invert(100%) saturate(100%);
+            opacity: 80%;
+            border: 0.1px solid black;
         }
 
 header, main, footer {
@@ -161,13 +201,14 @@ nav, #hero {
         /* border: 2px solid orchid; */
         margin: 3rem auto 0;
         padding: 0;
-        font-size: 2rem;
-        line-height: 1.4;
+        font-size: 4rem;
+        line-height: 1;
      }
 
      #hero p {
         /* border: 2px solid greenyellow; */
         margin: 0 auto 1rem;
+        padding: 0.4rem;
         font-style: italic;
         font-size: 1.2rem;
         line-height: 1.1;
@@ -178,6 +219,13 @@ main {
     /* border: 2px solid blue; */ 
     text-align: start;
 } 
+
+
+h2 {
+    font-size: 3rem;
+}
+
+
 
 #about, #projects {
     margin: 1rem 1rem 3rem;
@@ -216,6 +264,11 @@ footer {
     /* border: 2px solid purple; */
     background-color: var(--nav-bg-color);
     color: var(--nav-text-color);
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.1;
 }
 
 footer a {
