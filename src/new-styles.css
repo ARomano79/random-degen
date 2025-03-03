@@ -45,13 +45,13 @@
   /*  STRUCTURAL */
 
   html {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0;
     padding: 0;
 }
 
 body {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     margin: 0 auto;
     padding: 0;
     text-align: center;
@@ -149,7 +149,7 @@ body {
         margin: 3rem auto 0;
         padding: 0;
         font-size: 5rem;
-        line-height: 1;
+        line-height: 1.1;
      }
 
      #hero p {
@@ -162,37 +162,54 @@ body {
      }
 
  main {
-     border: 2px solid blue;
+     /* border: 2px solid blue; */
     margin: 0 auto;
     padding: 0;
     text-align: start;
  }
 
-
- p {
-    margin: 0 auto;
-    padding: 0.4rem;
-    /* border: 2px solid teal; */
-    font-size: 1.6rem;
-    line-height: 1.4;
-}
-
-ul {
+ h2 {
     /* border: 2px solid red; */
-    margin: 0.2rem 0.4rem;
-    padding: 0.2rem 0.4rem;
-    list-style-position: inside;
- 
+    margin: 1rem auto;
+    padding: 0.4rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--drop-shadow-dark));
+    color: var(--hlink-color);
+    font-size: 3rem;
+    line-height: 1.1;
 }
 
 h3 {
-    font-size: 1.6rem;
+    /* border: 2px solid orange; */
+    margin: 1rem auto;
+    padding: 0.4rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--drop-shadow-dark));
+    font-size: 1.8rem;
     line-height: 1.1;
 }
 
 h4 {
-    font-size: 1.4rem;
+    /* border: 2px solid lime; */
+    margin: 1rem auto;
+    padding: 0.4rem;
+    font-size: 1.6rem;
     line-height: 1.1;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--drop-shadow-dark));
+    color: var(--hlink-color);
+}
+
+ p {
+    /* border: 2px solid teal; */
+    margin: auto 1rem; 
+    padding: 0.2rem;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+ul {
+    /* border: 2px solid red; */
+    margin: auto 1rem;
+    padding: 0.2rem 0.4rem;
+    list-style-position: inside;
 }
 
 li {
@@ -200,13 +217,14 @@ li {
     margin: 0 auto;
     padding: 0.2rem;
     line-height: 1.2;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 a {
-    margin: 0 auto;
-    padding: 0;
+    margin: 0.1rem auto;
+    padding: 0.1rem;
     color: var(--link-color);
+    text-decoration: none;
     /* border: 2px solid red; */
 }
 
@@ -219,10 +237,42 @@ a {
     }
 
     a:hover {
-    color: var(--hlink-color);
+        font-size: 1rem;
+        line-height: 1.1;
+        color: var(--hlink-color);
     }
 
+
+    #about, #projects {
+        margin: 0.6rem 1rem 2rem;
+        padding: 0.2rem;
+        border: 1px solid transparent;
+        border-radius: 0.4rem;
+        filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--drop-shadow-dark));
+    }
+
+
  footer {
-    margin: 0 auto;
-        padding: 0;
+       /* border: 2px solid purple; */
+        margin: 0.4rem auto;
+        padding: 0.2rem;
+        filter: drop-shadow(0.1rem 0.1rem 0.1rem var(--drop-shadow-dark));
  }
+
+ footer p {
+    margin: 0 auto;
+    line-height: 1.1;
+ }
+
+ footer p a {
+    margin: 0 auto;
+    padding: 0;
+ }
+
+ footer p a:hover {
+    color: var(--hlink-color);
+    line-height: 1.1;
+    border-top: 2px solid var(--hlink-color);
+    border-bottom: 2px solid var(--hlink-color);
+ }
+
