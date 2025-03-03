@@ -1,0 +1,102 @@
+:root {
+
+    /* NAV & FOOTER */
+ 
+    --nav-bg-color: rgba(234,234,234,1);
+    --nav-text-color: rgba(22,22,22,1);
+    --nav-link-color: rgba(0,142,204,1);
+    --nav-alink-color: rgba(187,38,73,1);
+    --nav-vlink-color: rgba(99,3,204,1);
+    --nav-hlink-color: rgba(187,38,73,1);
+     
+    --color1: rgb(99,3,204);
+    --color2: rgb(1,153,247);
+}
+
+
+     nav {}
+
+         
+         footer a:hover {
+            border-top: 2px solid var(--nav-hlink-color);
+            border-bottom: 2px solid var(--nav-hlink-color);
+            color: var(--nav-hlink-color);
+            
+         }
+
+
+main {
+   
+} 
+
+
+h2 {
+    font-size: 3rem;
+}
+
+
+
+#about, #projects {
+    margin: 1rem 1rem 3rem;
+    padding: 0.2rem;
+    border: 1px solid var(--bg-color);
+    border-radius: 0.4rem;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+
+        #about {
+    /* border: 2px solid green; */
+    /*
+        }
+
+        #projects {
+    /* border: 2px solid coral; */
+    /*
+        }
+
+
+#about a, #projects a {
+    color: var(--nav-link-color);
+}
+#about a:active, #projects a:active {
+    color: var(--nav-alink-color);
+}
+#about a:visited, #projects a:visited {
+    color: var(--nav-vlink-color);
+}
+#about a:hover, #projects a:hover {
+color: var(--nav-hlink-color);
+}
+
+
+
+footer {
+    /* border: 2px solid purple; */
+    /*
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.1;
+}
+
+footer a {
+    color: var(--nav-link-color);
+}
+
+footer a:active {
+    color: var(--nav-alink-color);
+}
+
+footer a:visited {
+    color: var(--nav-vlink-color);
+}
+
+footer a:hover {
+    color: var(--nav-hlink-color);
+}
+
+*/
